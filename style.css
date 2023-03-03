@@ -16,14 +16,40 @@
     font-family: Arial, sans-serif;
     font-size: 16px;
   }
+
+  /* ======= ScrollBard Visual (EXTRA) ======= */
+
+body {
+  background-color: #141414ec;
+}
+
+body::-webkit-scrollbar {
+  width: 7px;
+  background: #141414;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(rgba(255, 0, 0, 0.8) 0%, rgba(188, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0) 100%);
+  border-radius: 10px;
+}
+
 /* ======= Nav bar (Menú) ======= ✅ (Tal vez se hagan cambios) */
+
+
+header{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background-color: #00000044;
+  backdrop-filter: blur(3px);
+}
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 5px;
-  background-color: #141414;
 }
 
 nav ul {
@@ -105,7 +131,7 @@ nav form {
   text-align: center;
   position: relative;
   z-index: 1;
-  height: 80vh;
+  height: 100vh;
 }
 
 /* Degradado negro + texto */
@@ -159,27 +185,56 @@ nav form {
 
 /* ======= Sección 1 (Ventajas) ======= ✅ */
 
-section {
-  padding: 40px;
-  background-color: #141414;
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: white;
 }
 
-section h3{
+.ventajas {
+  background-color: #141414;
+  padding: 40px 0px;
+}
+
+.container {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.ventajas h3{
   margin-bottom: 20px;
   font-size: 2rem;
   text-align: center;
   color: white;
 }
 
-section span {
+.ventajas span {
   color: white;
+}
+
+.ventajas h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+.contenedor-peliculas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .peliculas {
   display: flex;
   list-style: none;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  text-align: justify;
+
 }
 
 .peliculas li {
@@ -187,6 +242,8 @@ section span {
   margin-right: 20px;
   margin-bottom: 40px;
   background-color: transparent;
+  min-width: 45%;
+  
 }
 
 .peliculas a {
@@ -207,7 +264,99 @@ section span {
 
 /* ======= Sección 2 (Imágen 1) ======= ❌ */
 
+.container {
+  color: white;
+}
+
+.container h2, p{
+  margin-top: 30px;
+}
+
+.s2-container {
+  display: flex;
+}
+
+.s2-slider-img {
+  display: flex;
+  width: 50%;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+}
+
+.s2-slider-img img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+}
+
+.s2-text {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: justify;
+}
+
 /* ======= Sección 3 (Características) ======= ❌ */
+
+.caracteristicas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: #141414;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.caracteristicas-container {
+  display: flex;
+  gap: 20px;
+}
+
+.caracteristicas h1 {
+  display: flex;
+  align-self: flex-start;
+  margin-bottom: 30px;
+}
+
+.s3-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.s3-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.s3-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.s3-button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e50914;
+  color: #fff;
+  font-size: 1.2rem;
+  text-decoration: none;
+  width: fit-content;
+  margin-top: 20px;
+}
+.s3-button:hover {
+  background-color: #790006;
+}
+
 
 /* ======= Sección 4 (Imágen 2) ======= ❌ */
 
