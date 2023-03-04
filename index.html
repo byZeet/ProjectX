@@ -8,23 +8,24 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-<!-- /*======= JavaScript Linked (EXTRA) =======*/ ❌ -->
+<!-- /*======= JavaScript Linked (EXTRA) =======*/ ✅ -->
 
 <script src="./script.js"></script>
 
 <!-- /*======= Nav Bar (Menú) =======*/ ✅ -->
 <header>
-  <nav>
+  <nav class="centrado">
     <div class="logo-navbar">
       <img src="./image/Logo_Footer.png" alt="">
     </div>
     <ul>
-      <li><a href="#">Series</a></li>
-      <li><a href="#">Películas</a></li>
+      </div>
     </ul>
     <form>
-      <input type="text" placeholder="Buscar">
-      <button type="submit">Buscar</button>
+      <div class="search-container">
+        <input type="text" placeholder="Buscar">
+        <button type="submit"><img src="./image/search.svg" alt="Buscar"></button>
+      </div>
     </form>
     <div class="login-buttons">
       <button>Iniciar sesión</button>
@@ -32,6 +33,7 @@
     </div>
   </nav>
 </header>
+
 
 <!-- /*======= Hero (Vídeo) =======*/ ✅ -->
 <div class="hero">
@@ -82,7 +84,7 @@
           </div>
         </section>
 
-<!-- /*======= Sección 2 (Imágen 1) =======*/ ❌ -->
+<!-- /*======= Sección 2 (Imágen 1) =======*/ ✅ -->
 
 <section class="container">
 <div class="s2-container">
@@ -101,7 +103,7 @@
 </div>
 </section>
 
-<!-- /*======= Sección 3 (Características) =======*/ ❌ -->
+<!-- /*======= Sección 3 (Características) =======*/ ✅ -->
 
 <section class="container caracteristicas">
   <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, corporis.</h1>
@@ -145,9 +147,52 @@
   </div>
   </section>
 
-<!-- /*======= Sección 4 (Imágen 2) =======*/ ❌ -->
+<!-- /*======= Sección 4 (Imágen 2) =======*/ ✅ -->
 
-<!-- /*======= Sección 5 (Tarjetas) =======*/ ❌ -->
+<section class="container">
+  <div class="s4-container">
+    <div class="s4-slider-img">
+      <img src="./image/Película_DoctorStrange.jpg" alt="">
+    </div>
+    <div class="s4-text">
+      <h2>Doctor Strange y el multiverso de la locura</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In earum, modi iusto voluptate optio aliquam fugiat nemo rem. Delectus dicta, similique laboriosam quaerat eius nisi natus amet consectetur quos nemo.
+      A voluptatem quas architecto odit cupiditate dolore necessitatibus, dolores tempora suscipit hic animi optio atque soluta sequi voluptatum deleniti. In obcaecati mollitia reiciendis sint deleniti nesciunt non vero quaerat reprehenderit.
+      Sed eius accusamus fuga, dignissimos laborum nulla ducimus inventore amet qui provident sunt dolorem facilis quae nisi eveniet autem. Velit sequi maiores magni sed quaerat natus at architecto non fugiat?
+      Illo suscipit rerum ipsam aspernatur corporis, in ullam quae facilis necessitatibus exercitationem animi sunt optio eveniet commodi repellendus itaque dolore cumque quo iste facere inventore non hic. Amet, perspiciatis explicabo?
+      Voluptatum accusamus tenetur ea laboriosam officiis, repellat nesciunt nobis autem provident libero cupiditate officia nulla aliquam doloremque expedita ex ducimus enim dolore magni vero? Sunt modi atque soluta neque accusantium.</p>
+      
+    </div>
+  </div>
+  </section>
+
+<!-- /*======= Sección 5 (Tarjetas) =======*/ ✅ -->
+
+<section class="container tarjetas-container">
+  <div class="tarjetas" >
+    <div class="s5-text">
+      <h1>Título de la sección</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <img src="./image/Serie_PeakyBlinder.jpg" alt="Imagen 1">
+        <h3>Texto principal de la tarjeta 1</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti excepturi culpa amet earum pariatur eum adipisci. Accusamus, corporis a ducimus blanditiis, dicta voluptates adipisci tempore maiores repudiandae labore earum dolorem at eveniet suscipit officiis perferendis minus quidem illum excepturi alias.</p>
+      </div>
+      <div class="card">
+        <img src="./image/Serie_PeakyBlinder.jpg" alt="Imagen 2">
+        <h3>Texto principal de la tarjeta 2</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente possimus sunt ipsum voluptate obcaecati. Voluptates, iste. Natus optio ad assumenda animi sunt officia soluta perspiciatis? Iste ducimus ab, minima illum inventore ad sint natus excepturi cumque itaque accusamus aut ipsum.</p>
+      </div>
+      <div class="card">
+        <img src="./image/Serie_PeakyBlinder.jpg" alt="Imagen 3">
+        <h3>Texto principal de la tarjeta 3</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur dolorem voluptatum obcaecati ipsam voluptatem libero beatae tempora. Soluta, quisquam explicabo ipsam ad nemo magnam amet unde fugiat autem ut minima iure, quidem repellat? Vitae itaque quam perspiciatis corporis quaerat distinctio.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- /*======= Sección 6 (Call to action final) =======*/ ✅ -->
 <div class="cta">
